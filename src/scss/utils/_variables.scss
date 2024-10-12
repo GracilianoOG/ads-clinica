@@ -1,9 +1,7 @@
 :root {
   /* Base colors */
   --color-light-gray: hsl(0, 0%, 95%);
-  --color-light-green: hsl(160, 100%, 75%);
   --color-dark-blue: hsl(201, 100%, 14%);
-  --color-light-blue: hsl(192, 70%, 43%);
   --color-white: hsl(0, 0%, 100%);
   --color-red: hsl(355, 78%, 56%);
   --color-dark-gray: hsl(0, 0%, 16%);
@@ -12,9 +10,7 @@
 
   /* Element colors */
   --color-body-bg: var(--color-light-gray);
-  --color-wrapper-bg: var(--color-light-green);
   --color-menu-bg: var(--color-dark-blue);
-  --color-header-bg: var(--color-light-blue);
   --color-content-bg: var(--color-white);
   --color-header-title: var(--color-white);
   --color-footer-bg: var(--color-red);
