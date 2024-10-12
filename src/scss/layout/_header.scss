@@ -1,0 +1,35 @@
+@use "../utils/functions" as *;
+
+.header {
+  --header-img: url("../assets/images/header/index-header.png");
+  --header-rad: radial-gradient(transparent, var(--header-col));
+  --header-col: hsla(0, 0%, 0%, 0.35);
+
+  align-items: center;
+  background-image: var(--header-rad), var(--header-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-header-text);
+  display: flex;
+  flex-direction: column;
+  font-family: "Pacifico", cursive;
+  justify-content: center;
+  min-height: 200px;
+
+  &--about {
+    --header-img: url("../assets/images/header/about-header.png");
+  }
+
+  &--contact {
+    --header-img: url("../assets/images/header/contact-header.png");
+  }
+
+  &--services {
+    --header-img: url("../assets/images/header/services-header.png");
+  }
+
+  &__text {
+    font-size: toRem(18px);
+  }
+}

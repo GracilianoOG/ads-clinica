@@ -1,0 +1,10 @@
+body {
+  background-color: var(--color-body-bg);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+}
+
+body, textarea, button, input {
+  font-family: "Raleway", sans-serif;
+}

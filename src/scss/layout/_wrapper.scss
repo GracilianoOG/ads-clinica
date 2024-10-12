@@ -1,0 +1,7 @@
+.wrapper {
+  background-color: var(--color-wrapper-bg);
+  display: flex;
+  flex-direction: column;
+  max-width: var(--width-wrapper);
+  width: 100%;
+}

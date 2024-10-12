@@ -1,0 +1,42 @@
+@use "./functions" as *;
+
+.main-title {
+  color: var(--color-header-title);
+  font-size: clamp(toRem(36px), 7vw, toRem(50px));
+  text-shadow: 4px 4px 0 hsla(0, 0%, 0%, 0.478);
+}
+
+.title-1 {
+  font-size: clamp(toRem(24px), 5vw, toRem(32px));
+  margin-bottom: 16px;
+}
+
+.title-2 {
+  font-size: clamp(toRem(22px), 5vw, toRem(28px));
+  margin-top: 36px;
+  margin-bottom: 18px;
+}
+
+.text {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.list {
+  margin-left: 10px;
+  list-style-position: inside;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: var(--color-highlight);
+}
+
+.figure {
+  margin-bottom: 24px;
+
+  &__caption {
+    color: var(--color-figcaption-text);
+    text-align: center;
+  }
+}

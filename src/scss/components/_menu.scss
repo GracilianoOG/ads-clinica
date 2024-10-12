@@ -1,0 +1,47 @@
+.menu {
+  background-color: var(--color-menu-bg);
+  // fit-content: vita que o menu esbugalhe o conteúdo textual dos botões de navegação
+  min-width: fit-content;
+  padding: 20px 30px;
+
+  &__list {
+    align-items: center;
+    display: none;
+    // flex-flow: flex-direction + flex-wrap
+    flex-flow: column wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: 16px;
+    position: sticky;
+  }
+  
+  &__link {
+    color: var(--color-link);
+    display: block;
+    text-decoration: none;
+    padding: 12px;
+
+    & > i {
+      width: 25px;
+    }
+  }
+  
+  &__item {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      background-color: var(--color-red);
+      content: "";
+      height: 100%;
+      position: absolute;
+      transition: width 0.35s;
+      width: 0;
+      z-index: -1;
+    }
+    
+    &.active::before {
+      width: 100%;
+    }
+  }
+}

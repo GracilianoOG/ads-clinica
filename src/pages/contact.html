@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gabriel">
+  <meta name="description"
+    content="Na VetCare, oferecemos cuidados veterinários de alta qualidade com atendimento personalizado para a saúde e bem-estar do seu pet. Agende uma consulta hoje!">
+  <meta name="keywords"
+    content="clínica veterinária, cuidados para pets, atendimento veterinário, saúde animal, VetCare, consultas veterinárias, tratamento de animais, clínica de animais, veterinário, cuidados com cães e gatos">
+  <title>VetCare | Clínica Veterinária</title>
+  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="menu">
+      <!-- Hamburguer -->
+      <input class="hamburguer-checker" type="checkbox" name="hamb" id="hamb">
+      <label class="hamburguer" for="hamb">
+        <div class="hamburguer__bar"></div>
+        <div class="hamburguer__bar"></div>
+        <div class="hamburguer__bar"></div>
+      </label>
+
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="../../index.html"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./about.html"><i class="fa-solid fa-location-dot"></i>Estabelecimento</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="./services.html"><i class="fa-solid fa-clock"></i>Disponibilidade</a>
+        </li>
+        <li class="menu__item active">
+          <a class="menu__link" href="./contact.html"><i class="fa-solid fa-user"></i>Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <header class="header header--contact">
+        <h1 class="header__title main-title"> Clínica <span class="highlight">VetCare</span></h1>
+        <p class="header__text">Cuidamos do seu pet!</p>
+      </header>
+
+      <main class="content">
+        <section>
+          <h2 class="title-1">Contato da Clínica VetCare</h2>
+
+          <p class="text">Estamos localizados na Rua dos Animais, 123, Bairro Pet, Cidade Animal. Nossos horários de
+            funcionamento são
+            de segunda a sexta-feira, das 8h às 18h, e aos sábados, das 9h às 14h.</p>
+
+          <p class="text">Para mais informações ou agendamentos, entre em contato conosco pelo telefone <a
+              href="tel:+551112345678">(11) 1234-5678</a> ou
+            pelo e-mail
+            <a href="mailto:contato@vetcare.com.br">contato@vetcare.com.br</a>.
+          </p>
+        </section>
+        <section>
+          <h3 class="title-2">Formulário de Contato</h3>
+
+          <div class="contact">
+            <form class="contact__form" action="" method="post">
+              <div class="contact__form-row">
+                <label class="contact__label" for="fname">Nome</label>
+                <input class="contact__field" type="text" id="fname" name="fname" placeholder="Informe seu nome"
+                  maxlength="100" required>
+              </div>
+              <div class="contact__form-row">
+                <label class="contact__label" for="femail">E-mail</label>
+                <input class="contact__field" type="email" id="femail" name="femail" placeholder="Informe seu e-mail"
+                  maxlength="100" required>
+              </div>
+              <div class="contact__form-row">
+                <label class="contact__label" for="fsubject">Assunto</label>
+                <input class="contact__field" type="subject" id="fsubject" name="fsubject" placeholder="Assunto"
+                  maxlength="40" required>
+              </div>
+              <div class="contact__form-row">
+                <label class="contact__label" for="fmessage">Mensagem</label>
+                <textarea class="contact__field contact__field--textarea" name="fmessage" id="fmessage"
+                  placeholder="Mensagem" rows="5" maxlength="255" required></textarea>
+              </div>
+              <div class="contact__buttons">
+                <!-- <input class="contact__button contact__button--submit" type="submit" value="Enviar"> -->
+                <!-- <input class="contact__button" type="reset" value="Limpar"> -->
+                <button type="submit" class="contact__button contact__button--submit">
+                  <i class="fa-solid fa-paper-plane"></i> Enviar
+                </button>
+                <button type="reset" class="contact__button contact__button--reset">
+                  <i class="fa-solid fa-broom"></i> Limpar
+                </button>
+              </div>
+            </form>
+            <div class="phone"></div>
+          </div>
+        </section>
+        <section>
+          <h3 class="title-2">Localização da Clínica</h3>
+
+          <iframe class="location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1878675.873611291!2d-46.011871932742345!3d-23.123116170676624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99d989a63882e9%3A0x97a269a75efd138c!2sVeterin%C3%A1rio%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1726773670356!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__end">&copy; 2024 VetCare Clínica Veterinária. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>

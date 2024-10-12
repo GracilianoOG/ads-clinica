@@ -1,0 +1,42 @@
+:root {
+  /* Base colors */
+  --color-light-gray: hsl(0, 0%, 95%);
+  --color-light-green: hsl(160, 100%, 75%);
+  --color-dark-blue: hsl(201, 100%, 14%);
+  --color-light-blue: hsl(192, 70%, 43%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-red: hsl(355, 78%, 56%);
+  --color-dark-gray: hsl(0, 0%, 16%);
+  --color-gray: hsl(0, 0%, 27%);
+  --color-light-gray-2: hsl(0, 0%, 54.9%);
+
+  /* Element colors */
+  --color-body-bg: var(--color-light-gray);
+  --color-wrapper-bg: var(--color-light-green);
+  --color-menu-bg: var(--color-dark-blue);
+  --color-header-bg: var(--color-light-blue);
+  --color-content-bg: var(--color-white);
+  --color-header-title: var(--color-white);
+  --color-footer-bg: var(--color-red);
+  --color-link: var(--color-white);
+  --color-text: var(--color-dark-gray);
+  --color-header-text: var(--color-white);
+  --color-footer-text: var(--color-white);
+  --color-figcaption-text: var(--color-gray);
+  --color-table-border: #d3d2d2;
+  --color-table-header: var(--color-red);
+  --color-table-row-hover: #f1f1f1;
+  --color-highlight: hsl(180, 100%, 50%);
+  --color-submit-hover: #07cca0;
+  --color-reset-hover: var(--color-red);
+
+  /* Layout */
+  --width-menu: 18%;
+  --width-main: calc(100% - var(--width-menu));
+  --width-wrapper: 1200px;
+
+  /* Hamburguer */
+  --hamb-bottom-space: 6px;
+  --hamb-height: 4px;
+  --hamb-size: calc(var(--hamb-bottom-space) + var(--hamb-height));
+}

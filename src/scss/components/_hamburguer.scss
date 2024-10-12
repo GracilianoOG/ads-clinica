@@ -1,0 +1,45 @@
+.hamburguer {
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+
+  // Controla as dimensões com flex é mais fácil, mas é muito repetitivo. Também sei usar as pseudo-classes  =P
+  // display: flex;
+  // flex-direction: column;
+  // gap: 6px;
+
+  &__bar {
+    background-color: var(--color-white);
+    height: var(--hamb-height);
+    transition:  transform 0.2s, width 0.2s, opacity 0.2s;
+    width: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: var(--hamb-bottom-space);
+    }
+  }
+}
+
+// Aumentei a especificidade para conseguir aplicar os estilos. Como evitar isso?
+.hamburguer-checker {
+  display: none;
+
+  &:checked ~ .menu__list {
+    display: flex;
+  }
+
+  &:checked ~ .hamburguer > .hamburguer__bar {
+    &:nth-child(1) {
+      transform: translate(0, var(--hamb-size)) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+      width: 0;
+    }
+
+    &:nth-child(3) {
+      transform: translate(0, calc(var(--hamb-size) * -1)) rotate(-45deg);
+    }
+  }
+}

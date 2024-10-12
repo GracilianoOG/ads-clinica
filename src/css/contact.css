@@ -1,0 +1,80 @@
+.contact {
+  display: grid;
+}
+.contact__button, .contact__field {
+  border: 1px solid var(--color-light-gray-2);
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact__form-row {
+  width: 100%;
+}
+.contact__label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.contact__field {
+  font-size: 1rem;
+  padding: 12px 20px;
+  width: 100%;
+}
+.contact__field--textarea {
+  resize: vertical;
+  max-height: 400px;
+}
+.contact__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.contact__button {
+  background-color: var(--color-white);
+  cursor: pointer;
+  flex: 1;
+  font-size: 1rem;
+  max-width: 100px;
+  padding: 10px;
+  transition: all 0.25s;
+}
+.contact__button--submit {
+  color: var(--color-white);
+  border-color: var(--color-dark-blue);
+  background-color: var(--color-dark-blue);
+}
+.contact__button--submit:hover {
+  background-color: var(--color-submit-hover);
+  border-color: var(--color-submit-hover);
+}
+.contact__button--reset:hover {
+  color: var(--color-reset-hover);
+  border-color: var(--color-reset-hover);
+}
+
+.location {
+  width: 100%;
+}
+
+.phone {
+  background: url("../assets/images/contact/doggy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 62rem) {
+  .contact {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .phone {
+    display: block;
+  }
+}

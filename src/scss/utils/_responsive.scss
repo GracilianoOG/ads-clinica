@@ -1,0 +1,66 @@
+@use "./functions" as *;
+
+@media screen and (min-width: toRem(576px)) {
+  .hamburguer {
+    display: none;
+  }
+
+  .menu {
+    padding: 20px 15px;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      margin-top: 0;
+    }
+
+    &__item {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (min-width: toRem(992px)) {
+  .main {
+    width: var(--width-main);
+  }
+
+  .menu {
+    padding: 10px 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: var(--width-menu);
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+
+      &.active::before {
+        width: 4px;
+      }
+  
+      &:hover::before {
+        width: 100%;
+      }
+
+      &.active::after {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.25) 60%, transparent);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+      }
+    }
+  }
+
+  .wrapper {
+    flex-direction: row;
+  }
+}
