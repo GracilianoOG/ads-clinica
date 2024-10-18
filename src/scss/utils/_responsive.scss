@@ -5,6 +5,10 @@
     display: none;
   }
 
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .menu {
     padding: 20px 15px;
 
@@ -23,6 +27,10 @@
 @media screen and (min-width: toRem(992px)) {
   .main {
     width: var(--width-main);
+  }
+
+  .features {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .menu {

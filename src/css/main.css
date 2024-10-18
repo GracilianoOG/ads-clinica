@@ -225,6 +225,9 @@ body, textarea, button, input {
   .hamburguer {
     display: none;
   }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .menu {
     padding: 20px 15px;
   }
@@ -240,6 +243,9 @@ body, textarea, button, input {
 @media screen and (min-width: 62rem) {
   .main {
     width: var(--width-main);
+  }
+  .features {
+    grid-template-columns: repeat(4, 1fr);
   }
   .menu {
     padding: 10px 20px;
