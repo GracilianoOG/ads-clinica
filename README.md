@@ -12,7 +12,16 @@ Tive alguns desafios, como ter que utilizar seletores mais específicos para faz
 
 As imagens de cabeçalho foram redimensionadas e tratadas com o software de edição de imagens GIMP. Um filtro de blur gaugasiano com 3px foi aplicado para diminuir o destaque da imagem e dar mais atenção ao conteúdo textual do cabeçalho.
 
-## 🎯 Requisitos
+## 🎯 Requisitos (AV2)
+
+Montar um código de CSS para modificar o estilo do trabalho de AV1. Além do estilo da página, deve incluir no seu código alguns elementos: 
+
+1. classe de div flexível para telas diferentes
+2. classe de div com figura de background fixa
+3. uma div com bordas arredondadas
+4. trocando a cor do texto de link e retirando o sublinhado
+
+## 🎯 Requisitos (AV1)
 
 Criar um site com os conteúdos abordados até aqui. Os temas principais que deverão ser abordados são:
 
