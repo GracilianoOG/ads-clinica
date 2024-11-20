@@ -21,6 +21,11 @@ body, textarea, button, input {
   font-family: "Raleway", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: hsl(354.9, 100%, 43.7%);
+}
+
 .header {
   --header-img: url("../assets/images/header/index-header.png");
   --header-rad: radial-gradient(transparent, var(--header-col));
